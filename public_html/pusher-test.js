@@ -13,3 +13,7 @@ var channel = pusher.subscribe('test_channel');
 channel.bind('my_event', function(data) {
 	alert('An event was triggered with message: ' + data.message);
 });
+
+function sendMessage() {
+	alert("This is your message.");
+}
